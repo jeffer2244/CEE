@@ -1,11 +1,71 @@
+/* General */
 body{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(202, 215, 243, 0.89);
+    color: rgb(0, 0, 0);
 }
-h1{
-    color: rgba(54, 219, 211, 0.89);
+/* Cabecera */
+header{
+    background-color: #0979b0;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
-p{
-    color: rgb(4, 150, 101);
+/* Navegacion */
+nav{
+    background-color: rgb(218, 125, 3);
+    padding: 10px;
     text-align: center;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline;
+    margin-right: 15px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+/* Contenido principal */
+main{
+    padding: 20px;
+}
+/* Articulo*/
+article{
+    background-color: #ffffff;
+    border: 1px; color: solid#ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+/* Seccion relacionada */
+section{
+    background-color: #e8f4f8;
+    padding: 15px;
+    border-radius: 5px;
+}
+/* Aside */
+aside{
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin: 20px;
+    border-left: 5px; color: solid#ccc;
+}
+/* Pie de pagina */
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
 }
