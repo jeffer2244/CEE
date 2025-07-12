@@ -1,71 +1,79 @@
-/* General */
+/* reset general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilo base del cuerpo */
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(202, 215, 243, 0.89);
-    color: rgb(0, 0, 0);
+    line-height: 1,6;
+    background-color: #f4f4f4;
+    color: #333;
 }
-/* Cabecera */
-header{
-    background-color: #0979b0;
+/* contenedor general */
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+/* ENCABEZADO Y MENÚ */
+.header{
+    background-color: #003366;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 15px 0;
 }
-/* Navegacion */
-nav{
-    background-color: rgb(218, 125, 3);
-    padding: 10px;
-    text-align: center;
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-nav ul{
+.logo{
+    width: 80px;
+    height: auto;
+}
+/* Menú de navegación */
+.nav-list{
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
 }
-nav li{
-    display: inline;
-    margin-right: 15px;
-}
-nav a{
+.nav-list a{
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-nav a:hover{
+.nav-list a:hover{
     text-decoration: underline;
 }
-/* Contenido principal */
-main{
-    padding: 20px;
-}
-/* Articulo*/
-article{
-    background-color: #ffffff;
-    border: 1px; color: solid#ddd;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-/* Seccion relacionada */
-section{
-    background-color: #e8f4f8;
-    padding: 15px;
-    border-radius: 5px;
-}
-/* Aside */
-aside{
-    background-color: #f0f0f0;
-    padding: 15px;
-    margin: 20px;
-    border-left: 5px; color: solid#ccc;
-}
-/* Pie de pagina */
-footer{
-    background-color: #333;
+/* SECCIÓN HERO */
+.hero{
+    background-color: #005599;
     color: white;
+    padding: 60px 0;
+}
+.hero h1{
+    font-size: 2,5rem;
+    margin-bottom: 10px;
+}
+/* SECCIÓN CAPACITACIONE */
+.capacitaciones{
+    background-color: white;
+    padding: 40px 0;
+}
+.capacitaciones h2{
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card{
+    background-color: #elecf4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
 }
