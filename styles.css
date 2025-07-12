@@ -100,9 +100,11 @@ body{
     gap: 15px;
     max-width: 500px;
     margin: auto;
+    text-align: center;
 }
 .formulario input,
-.formulario textarea{
+.formulario textarea,
+.formulario select{
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
