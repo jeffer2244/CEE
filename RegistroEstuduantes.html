@@ -5,26 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Estudiantes</title>
     <link rel="stylesheet" href="styles.css">
-     <link rel="icon" type="image/x-icon" href="img/logo.png">
+     <link rel="icon" type="image/x-icon" href="img/logo.png"> 
 </head>
 <body>
     <form class="formulario">
         <h1>Registro de Estudiantes</h1>
+        
+        <label for="nombre">Escriba sus Nombres Completos:</label>
         <input type="text" name="nombre"
         placeholder="Nombres Completos" required>
+
+        <label for="cedula">Escriba su Número de Cédula:</label>
         <input type="text" name="cedula" placeholder="Cédula" required>
+
+        <label for="edad">Elija su Edad:</label>
         <input type="number" name="edad" placeholder="Edad" min="12" max="75" required>
+
+        <label for="Sexo">Elija su Sexo:</label>
         <select name="sexo" required>
             <option value="" disabled>Sexo</option>
             <option value="masulino">Masculino</option>
             <option value="femenino">Femenino</option>
             <option value="otro">Otro</option>
         </select>
+
+        <label for="nacimiento">Elija su Fecha de Nacimiento:</label>
         <input type="date" name="nacimiento" placeholder="Fecha de Nacimiento" required>
+        <label for="direccion">Escriba su Dirección:</label>
         <input type="text" name="direccion" placeholder="Dirección" required>
+        <label for="telefono">Escriba su Número de Teléfono:</label>
         <input type="text" name="telefono" placeholder="Teléfono" required>
+        <label for="email">Escriba su Correo Electrónico:</label>
         <input type="text" name="email" placeholder="Correo Electrónico" required>
 
+        <label for="capacitaciones">Elija el Área de Capacitación:</label>
         <select name="capacitacion" required>
             <option value="" disabled>Área de Capacitación</option>
             <option value="Belleza Integral">Belleza Integral</option>
